@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"https://github.com/sebastiannesheim/Minyr.git"
+	"github.com/sebastiannesheim/Minyr"
 )
 
 const inputFile = "kjevik-temp-celsius-20220318-20230318.csv"
