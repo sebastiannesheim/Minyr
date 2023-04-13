@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"https://github.com/sebastiannesheim/funtemps.git"
+	"github.com/sebastiannesheim/funtemps/conv"
 )
 
 func GetNumberOfLines(filename string) (int, error) {
