@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/sebastiannesheim/Minyr/Yr"
+	yr "github.com/sebastiannesheim/Minyr/Yr"
 )
 
 const inputFile = "kjevik-temp-celsius-20220318-20230318.csv"
@@ -236,4 +236,4 @@ func generateOutputFile() error {
 
 func celsiusToFahrenheit(celsius float64) float64 {
 	return celsius*9/5 + 32
-}	
+}
