@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/sebastiannesheim/Minyr"
+	"github.com/sebastiannesheim/Minyr/Yr"
 )
 
 const inputFile = "kjevik-temp-celsius-20220318-20230318.csv"
@@ -36,11 +36,6 @@ func main() {
 }
 
 func presentOptions() string {
-	fmt.Println("***********************************************")
-	fmt.Println("*                                             *")
-	fmt.Println("*  Welcome to the temperature converter!      *")
-	fmt.Println("*                                             *")
-	fmt.Println("***********************************************")
 	fmt.Println("Please select an option:")
 	fmt.Println("Type 'convert' to convert create a new file with temperatures in Fahrenheit.")
 	fmt.Println("Type 'average' to calculate the average temperature from the files.")
@@ -230,7 +225,7 @@ func generateOutputFile() error {
 			}
 		} else {
 			// Write test string for the last line
-			_, err = writer.WriteString("Data er basert på gyldig data (per 18.03.2023) (CC BY 4.0) fra Meteorologisk institutt (MET);endringen er gjort av Kjell Lindberg")
+			_, err = writer.WriteString("Data er basert på gyldig data (per 18.03.2023) (CC BY 4.0) fra Meteorologisk institutt (MET);endringen er gjort av Sebastian Nesheim")
 			if err != nil {
 				return err
 			}
@@ -241,4 +236,4 @@ func generateOutputFile() error {
 
 func celsiusToFahrenheit(celsius float64) float64 {
 	return celsius*9/5 + 32
-}
+}	
