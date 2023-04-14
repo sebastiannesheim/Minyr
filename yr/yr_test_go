@@ -1,4 +1,4 @@
-package Yr
+package yr
 
 import (
 	"fmt"
