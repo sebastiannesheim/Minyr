@@ -77,7 +77,7 @@ func TestLastLineOfFiles(t *testing.T) {
 	// Map of file names and expected last lines
 	expected := map[string]string{
 		inputFile:  "Data er gyldig per 18.03.2023 (CC BY 4.0), Meteorologisk institutt (MET);;;",
-		outputFile: "Data er basert på gyldig data (per 18.03.2023) (CC BY 4.0) fra Meteorologisk institutt (MET);endringen er gjort av SiMENhol",
+		outputFile: "Data er basert på gyldig data (per 18.03.2023) (CC BY 4.0) fra Meteorologisk institutt (MET);endringen er gjort av Sebastian Nesheim",
 	}
 
 	for filename, want := range expected {
